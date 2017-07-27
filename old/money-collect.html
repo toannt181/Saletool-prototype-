@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+    <!-- Font icon CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<!-- Special padding for no search bar -->
+<body class="pt56 bg-white">
+
+<header class="fixed-top">
+    <div class="container py8">
+        <div class="row py8">
+            <div class="col-2">
+                <a href="order-detail.html"><span class="sat-Back-icon"></span></a>
+            </div>
+            <div class="col-8">
+                <div class="nav-title text-center">Thu tiền</div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mb53">
+    <div class="container">
+        <div class="row bg-white py16 content">
+            <div class="col-12 content-title">
+                Nhập số tiền
+            </div>
+            <div class="col-12 mt8">
+                <input class="form-control content" type="text" placeholder="Số tiền đơn hàng">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="bg-grey-with-pad"></div>
+        </div>
+
+        <div class="row py16 bg-white">
+            <div class="col-12 ">
+                <div class="content-title">Ngày thu tiền</div>
+                <div class="money-title text-center mt8">01/01/2017</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="bg-grey-with-pad"></div>
+        </div>
+
+        <div class="row py16 bg-white">
+            <div class="col-12 content-title">
+                Diễn tả
+            </div>
+            <div class="col-12 mt8">
+                <textarea class="form-control content" rows="6" placeholder="Mô tả nếu có"></textarea>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <button class="button-fix-bottom" id="button-" type="button" data-toggle="modal" data-target="#confirm-modal">Đồng ý</button>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 content-title">Số tiền gửi</div>
+                    <div class="col-12 money-title mt8 text-center">100.000.000đ</div>
+                    <div class="col-12 content-title mt16">Thông tin người nộp tiền</div>
+
+                    <div class="col-12 content mt16">
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Khách hàng
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                Mr A
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Số điện thoại
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                0123456789
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Ngày chuyển
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                01/01/2017
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Mã đơn hàng
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                6846840
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Lưu ý
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                ???
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt16 text-center">
+                        <button class="button-ok" id="button-ok" type="button">OK</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#button-ok').click(function () {
+            window.location.href = 'list-order-unpaid.html';
+        });
+
+    });
+</script>
+</body>
+</html>

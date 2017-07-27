@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+    <!-- Font icon CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<header class="fixed-top">
+    <div class="container py8">
+        <div class="row py8">
+            <div class="col-2">
+                <a href="#"><span class="sat-Hamburger-button"></span></a>
+            </div>
+            <div class="col-8">
+                <div class="nav-title text-center">Danh sách đơn hàng</div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="field">
+                    <label>
+                        <div class="placeholder"><span class="sat-Search"></span>&nbsp;&nbsp;Danh sách kỹ thuật viên
+                        </div>
+                        <input class="input-search" type="text">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="">
+    <div class="container">
+        <div class="row d-flex text-center bg-white tab">
+            <button type="button" id="button-paid" class="tab-item active">Đã thu</button>
+            <button type="button" id="button-unpaid" class="tab-item">Chưa thu</button>
+        </div>
+
+        <section class="underline-group bg-white content">
+            <div class="underline-item row pt16 bg-white">
+                <div class="col-12">Đơn hàng: <span class="content-title text-blue">46814846</span> - Nguyễn Văn A</div>
+                <div class="col-9 offset-1 line-height-24">Tiền đã thu: <span class="content-title text-blue">100.000.00đ</span></div>
+                <div class="col-2 mt8"><div class="icon-tick"><span class="sat-tick"></span></div></div>
+                <div class="col-11 offset-1">Tiền phải thu: <span class="content-title text-red">100.000.00đ</span></div>
+            </div>
+
+            <div class="underline-item row pt16 bg-white">
+                <div class="col-12">Đơn hàng: <span class="content-title text-blue">46814846</span> - Nguyễn Văn A</div>
+                <div class="col-9 offset-1 line-height-24">Tiền đã thu: <span class="content-title text-blue">100.000.00đ</span></div>
+                <div class="col-2 mt8"><div class="icon-tick"><span class="sat-info-icon"></span></div></div>
+                <div class="col-11 offset-1">Tiền phải thu: <span class="content-title text-red">100.000.00đ</span></div>
+            </div>
+
+            <div class="underline-item row pt16 bg-white">
+                <div class="col-12">Đơn hàng: <span class="content-title text-blue">46814846</span> - Nguyễn Văn A</div>
+                <div class="col-9 offset-1 line-height-24">Tiền đã thu: <span class="content-title text-blue">100.000.00đ</span></div>
+                <div class="col-2 mt8"><div class="icon-tick"><span class="sat-tick"></span></div></div>
+                <div class="col-11 offset-1">Tiền phải thu: <span class="content-title text-red">100.000.00đ</span></div>
+            </div>
+
+            <div class="underline-item row pt16 bg-white">
+                <div class="col-12">Đơn hàng: <span class="content-title text-blue">46814846</span> - Nguyễn Văn A</div>
+                <div class="col-9 offset-1 line-height-24">Tiền đã thu: <span class="content-title text-blue">100.000.00đ</span></div>
+                <div class="col-2 mt8"><div class="icon-tick"><span class="sat-info-icon"></span></div></div>
+                <div class="col-11 offset-1">Tiền phải thu: <span class="content-title text-red">100.000.00đ</span></div>
+            </div>
+
+            <div class="underline-item row pt16 bg-white">
+                <div class="col-12">Đơn hàng: <span class="content-title text-blue">46814846</span> - Nguyễn Văn A</div>
+                <div class="col-9 offset-1 line-height-24">Tiền đã thu: <span class="content-title text-blue">100.000.00đ</span></div>
+                <div class="col-2 mt8"><div class="icon-tick"><span class="sat-info-icon"></span></div></div>
+                <div class="col-11 offset-1">Tiền phải thu: <span class="content-title text-red">100.000.00đ</span></div>
+            </div>
+
+
+
+        </section>
+
+    </div>
+</main>
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.field input').focus(function () {
+            $(this).siblings('.placeholder').hide();
+        });
+
+        $('.field input').blur(function () {
+            if ($(this).val() === '') {
+                $(this).siblings('.placeholder').show();
+            }
+        });
+
+        $('#button-paid').click(function () {
+            window.location.href = 'list-order-paid.html';
+        });
+
+        $('#button-unpaid').click(function () {
+            window.location.href = 'list-order-unpaid.html';
+        });
+
+    });
+
+</script>
+</body>
+</html>

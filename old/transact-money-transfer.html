@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+    <!-- Font icon CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<header class="fixed-top">
+    <div class="container py8">
+        <div class="row py8">
+            <div class="col-2">
+                <a href="#"><span class="sat-Hamburger-button"></span></a>
+            </div>
+            <div class="col-8">
+                <div class="nav-title text-center">Giao dịch chuyển tiền</div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="field">
+                    <label>
+                        <div class="placeholder"><span class="sat-Search"></span>&nbsp;&nbsp;Tìm kiếm đơn hàng</div>
+                        <input class="input-search" type="text">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mb141">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py8 bg-white">
+                <div class="content-title">Số tiền chuyển</div>
+                <div class="money-title text-center mt8 border-box-3">100.000.000đ</div>
+            </div>
+        </div>
+
+        <div class="row bg-white mt8 py8">
+            <div class="col-8 content-title">
+                Thông tin người nhận
+            </div>
+            <div class="col-4 content text-right">
+                <button class="button-normal" id="button-change" type="button">Thay đổi</button>
+            </div>
+
+            <div class="col-12 content mt16">
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Khách hàng
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        Mr A
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Số điện thoại
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        0123456789
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Nơi công tác
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        Hanoi
+                    </div>
+                </div>
+
+                <textarea class="form-control mt16" rows="4" placeholder="Ghi chú nếu có"></textarea>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</main>
+
+<footer class="fixed-bottom">
+    <div class="container bg-white">
+        <div class="row pt8">
+            <div class="col-12">
+                <div class="content-title">
+                    Nhập mã pin
+                </div>
+                <input class="form-control mt8 mb16 content" placeholder="Nhập mã pin">
+            </div>
+            <button class="button-fix-bottom" type="button" data-toggle="modal" data-target="#confirm-modal">Xác nhận
+            </button>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 content-title">Số tiền chuyển</div>
+                    <div class="col-12 money-title mt8 text-center">100.000.000đ</div>
+                    <div class="col-12 content-title mt16">Thông tin người nhận</div>
+
+                    <div class="col-12 content mt16">
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Khách hàng
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                Mr A
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Số điện thoại
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                0123456789
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Nơi công tác
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                Hanoi
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6 border-box-1 py8">
+                                Lưu ý
+                            </div>
+                            <div class="col-6 border-box-1 py8 text-blue">
+                                ???
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt16 text-center">
+                        <button class="button-ok" id="button-ok" type="button">OK</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.field input').focus(function () {
+            $(this).siblings('.placeholder').hide();
+        });
+
+        $('.field input').blur(function () {
+            if ($(this).val() === '') {
+                $(this).siblings('.placeholder').show();
+            }
+        });
+
+        $('#button-change').click(function () {
+            window.location.href = 'list-receiver.html';
+        });
+
+        $('#button-ok').click(function () {
+            window.location.href = 'list-transact-detail.html';
+        });
+    })
+</script>
+</body>
+</html>

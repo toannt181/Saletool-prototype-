@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+    <!-- Font icon CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<!-- this is special body -->
+<body class="bg-white">
+
+<header class="fixed-top">
+    <div class="container py8">
+        <div class="row py8">
+            <div class="col-2">
+                <a href="#"><span class="sat-Hamburger-button"></span></a>
+            </div>
+            <div class="col-8">
+                <div class="nav-title text-center">Chi tiết giao dịch</div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="field">
+                    <label>
+                        <div class="placeholder"><span class="sat-Search"></span>&nbsp;&nbsp;Tìm kiếm đơn hàng</div>
+                        <input class="input-search" type="text">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="mb53">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py8 bg-white">
+                <div class="content-title">Số tiền chuyển</div>
+                <div class="money-title text-center mt8 border-box-3">100.000.000đ</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg-grey-with-pad"></div>
+        </div>
+        <div class="row bg-white py8">
+            <div class="col-12 content-title">
+                Thông tin người nhận
+            </div>
+
+            <div class="col-12 content mt16">
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Khách hàng
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        Mr A
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Số điện thoại
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        0123456789
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Nơi công tác
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        Hanoi
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="col-6 border-box-1 py8">
+                        Lưu ý
+                    </div>
+                    <div class="col-6 border-box-1 py8 text-blue">
+                        ???
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <button id="button-agree" class="button-fix-bottom" type="button">Đồng ý</button>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.field input').focus(function () {
+            $(this).siblings('.placeholder').hide();
+        });
+
+        $('.field input').blur(function () {
+            if ($(this).val() === '') {
+                $(this).siblings('.placeholder').show();
+            }
+        });
+
+        $('#button-agree').click(function () {
+            window.location.href = 'list-transact-detail.html';
+        });
+    })
+</script>
+</body>
+</html>
