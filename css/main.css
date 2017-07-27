@@ -60,7 +60,8 @@ div.main .container > div {
 }
 
 header {
-    background-image: url('../img/topbar.png');
+    /*background-image: url('../img/topbar.png');*/
+    background: linear-gradient(to top right, #2ac15b, #2b9aa8);
 }
 
 footer {
@@ -156,6 +157,9 @@ footer {
     width: 100%;
     border: none;
     border-radius: 4px;
+    background: url("../img/icon-search.png") no-repeat right white;
+    background-size: 32px 32px;
+    background-position-x: 98%;
 }
 
 .sale-page-img img {
@@ -257,6 +261,9 @@ footer {
     border-bottom: none;
 }
 
+a.catalog-item {
+    color: #555;
+}
 
 .footer-modal {
 
@@ -327,6 +334,9 @@ footer {
 .font-size-12 {
     font-size: 12px;
 }
+.font-size-14 {
+    font-size: 14px;
+}
 
 .font-size-16 {
     font-size: 16px;
@@ -341,7 +351,7 @@ footer {
 }
 
 .border-top-1 {
-    border-top: 1px solid grey;
+    border-top: 1px solid lightgrey;
 }
 
 .border-left-1 {
@@ -366,6 +376,9 @@ footer {
 }
 
 /* ICON size */
+.icon-size-14:before {
+    font-size: 14px;
+}
 .icon-size-20:before {
     font-size: 20px;
 }
@@ -374,8 +387,16 @@ footer {
     color: black;
 }
 
+.icon-white:before {
+    color: white;
+}
+
 .icon-size-32:before {
     font-size: 32px;
+}
+
+.icon-size-64:before {
+    font-size: 64px;
 }
 
 /* Margin padding */
