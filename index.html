@@ -1,277 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Tekshop mobile</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
-    <!-- Icon -->
+    <!-- Font icon CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=vietnamese"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/themify-icons.css">-->
+</head>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!--Slider css-->
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css"/>
-
-    <!-- Customize CSS -->
-    <link rel="stylesheet" href="css/main.css">
-
+<!-- Customize CSS -->
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<!--TOP NAV-->
-<header class="fixed-top py8">
-
+<div class="main">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-2">
-                <a href="#" class="icon-size">
-                    <span class="sat-Hamburger-button"></span>
-                </a>
-            </div>
-            <div class="col-8 text-center">
-                <a href="#"><img class="h-100" src="images/logo-top.png" alt=""></a>
-            </div>
-            <div class="col-2 text-right">
-                <a href="giohang.html" class="icon-size">
-                    <span class="sat-GIO-HANG"></span>
-                </a>
-            </div>
-        </div>
+        <h2>Modal page</h2>
 
-        <div class="row mt16">
-            <div class="col-12">
-                <div class="field">
-                    <label>
-                        <div class="placeholder"><span class="sat-Search"></span>&nbsp;&nbsp;Tìm kiếm sẩn phẩm trong
-                            danh mục
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p1-1">1.1</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p1-2-1">1.2.1</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p2-6">2.6</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p2-7">2.7</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p2-9">2.9</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p3-4-4">3.4.4</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p4-1">4.1</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#p4-4">4.4</button>
+
+
+        <!-- Modal -->
+        <div class="bg-0 modal fade" id="p1-1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box-2-section border-0">
+                        <div class="d-flex title bg-dark-blue justify-content-between align-items-center">
+                            <div><span class="sat-Trangchu icon-size-20"></span></div>
+                            <div class="font-size-18 py8">Nguyen Van A XXXXXXX</div>
                         </div>
-                        <input class="input-search" type="text">
-                    </label>
+                        <div class="content line-bottom-group">
+                            <div class="text-center">Bạn muốn thoát ứng dụng?</div>
+
+                            <div class="bg-0 mt16 d-flex py16">
+                                <div class="col-6 pl-0">
+                                    <button class="button-full-w bg-red">Đóng</button>
+                                </div>
+                                <div class="col-6 pl-0">
+                                    <button class="button-full-w bg-green">Xác nhận</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="search-history">
+        </div>
 
+
+        <div class="bg-0 modal fade" id="p2-6" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+                        <div class="text-center">Bạn đã đặt hàng thành công</div>
+                        <button class="button-full-w bg-dark-blue mt16">Đồng ý</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
-</header>
+        <div class="bg-0 modal fade" id="p2-9" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+                        <div class="text-center">Bạn muốn hủy đơn hàng?</div>
 
-<main>
-    <div class="container">
-        <div class="row">
-            <ul id="top-banner">
-                <li>
-                    <img class="w-100" src="images/banner1.png">
-                </li>
-                <li>
-                    <img class="w-100" src="images/banner1.png">
-                </li>
-                <li>
-                    <img class="w-100" src="images/banner1.png">
-                </li>
-            </ul>
-        </div>
-        <div class="row mt8 py16 bg-white">
-            <div class="content-title">
-                <button class="button-box" type="button">Hot deal</button>
+                        <textarea class="form-control mt16" rows="5" placeholder="Nhập lý do hủy đơn hàng"></textarea>
+
+                        <div class="bg-0 mt16 d-flex py16">
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-red">Không</button>
+                            </div>
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-green">Hủy đơn</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <section class="hotdeal-group">
-                <div class="col-6 hotdeal-item">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="status_band">-15%</div>
+        <div class="bg-0 modal fade" id="p1-2-1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+
+                        <input type="text" class="form-control font-size-12 py16 text-center"
+                               placeholder="VUI LÒNG NHẬP MÃ XÁC NHẬN TẠI ĐÂY">
+
+                        <div class="mt16 text-center">Mã xác nhận đã được gửi đến số điện thoại đã đăng ký. Để nhận lại
+                            mã vui lòng chọn <a href="#" class="a-link">Gửi lại mã</a></div>
+
+                        <button class="button-full-w bg-dark-blue mt16">XÁC NHẬN</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-0 modal fade" id="p2-7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+                        <div class="text-center">Tất cả sản phẩm trong giỏ hàng sẽ bị xóa. Bạn có chắc chắn không?</div>
+
+                        <div class="bg-0 mt16 d-flex py16">
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-red">Không</button>
+                            </div>
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-green">Chắc chắn</button>
+                            </div>
                         </div>
-                        <div class="col-12 text-center mt8">
-                            <img class="w-75" src="images/Product1.png">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-0 modal fade" id="p3-4-4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+                        <div class="text-center">
+                            Bạn chắc chắn muốn đóng phiếu? Các thông tin báo giá sẽ được xóa
                         </div>
-                        <div class="col-12">
-                            <div class="content">Tai nghe Razer Mano'war Tournament Edition</div>
+
+                        <div class="bg-0 mt16 d-flex py16">
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-red">Không</button>
+                            </div>
+                            <div class="col-6 pl-0">
+                                <button class="button-full-w bg-green">Quay lại</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-0 modal fade" id="p4-1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="box border-0">
+                        <div class="text-center">
+                            Nhập số lượng dàn máy
+                        </div>
+
+                        <input class="form-control py16 mt32">
+
+                        <button class="button-full-w bg-green mt32">Đồng ý</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-0 modal fade" id="p4-4" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="d-flex py16">
+                        <div class="col-2 text-center">
+                            <a href="#"><span class="sat-back icon-size-20 icon-black"></span></a>
+                        </div>
+                        <div class="col-8">
+                            <div class="text-center font-size-16">Sản phẩm thay thế</div>
+                        </div>
+                    </div>
+
+                    <div class="px8">
+                    <div class="my8">
+                        <div class="d-flex">
+                            <div>
+                                <div class="img-64"></div>
+                            </div>
+                            <div class="px16">
+                                <div class="d-flex">
+                                    <div class="col-9 d-flex-column justify-content-between">
+                                        <div class="">Chuột Lorem ipsum dolor sit amet.</div>
+                                        <div class="text-orange font-size-16 text-bold">25.000.000 VND</div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center">TICK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my8">
+                        <div class="d-flex">
+                            <div>
+                                <div class="img-64"></div>
+                            </div>
+                            <div class="px16">
+                                <div class="d-flex">
+                                    <div class="col-9 d-flex-column justify-content-between">
+                                        <div class="">Chuột Lorem ipsum dolor sit amet.</div>
+                                        <div class="text-orange font-size-16 text-bold">25.000.000 VND</div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-center">TICK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class=" py16 d-flex">
+                        <div class="col-6">
+                            <button class="button-full-w bg-red">Đóng</button>
                         </div>
                         <div class="col-6">
-                            <div class="content-price-discount">6.500.000đ</div>
-                        </div>
-                        <div class="col-6">
-                            <div class="content-price">6.500.000đ</div>
+                            <button class="button-full-w bg-green">Chọn</button>
                         </div>
                     </div>
+
+
                 </div>
-                <div class="col-6 hotdeal-item">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="status_band">-15%</div>
-                        </div>
-                        <div class="col-12 text-center mt8">
-                            <img class="w-75" src="images/Product1.png">
-                        </div>
-                        <div class="col-12">
-                            <div class="content">Tai nghe Razer Mano'war Tournament Edition</div>
-                        </div>
-                        <div class="col-6">
-                            <div class="content-price-discount">6.500.000đ</div>
-                        </div>
-                        <div class="col-6">
-                            <div class="content-price">6.500.000đ</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <div class="row bg-white py16 mt8">
-            <div class="col-6">
-                <div class="content-title">Hot trend</div>
-            </div>
-            <div class="col-6 text-right content">
-                <button class="button-more" type="button">Xem thêm <span class="sat-ARROW"></span></button>
-            </div>
-        </div>
-        <div class="row bg-white py16 mt1">
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="status_band">-15%</div>
-                    </div>
-                    <div class="col-12 text-center mt8">
-                        <img class="w-75" src="images/Product1.png">
-                    </div>
-                    <div class="col-12">
-                        <div class="content">Tai nghe Razer Mano'war Tournament Edition</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="content-price-discount">6.500.000đ</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="content-price">6.500.000đ</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row bg-white py16 mt8">
-            <div class="col-6">
-                <div class="content-title">Danh mục sản phẩm</div>
-            </div>
-            <div class="col-6 text-right content">
-                <button class="button-more" type="button">Xem thêm <span class="sat-ARROW"></span></button>
-            </div>
-
-            <div class="catalog-group mt16">
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-CPU"></span></div>
-                    <div class="content">Chip</div>
-                </a>
-
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-MS"></span></div>
-                    <div class="content">Chuột</div>
-                </a>
-
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-MB"></span></div>
-                    <div class="content">Bo mạch chủ</div>
-                </a>
-
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-VGA"></span></div>
-                    <div class="content">Card màn hình</div>
-                </a>
-
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-HDD"></span></div>
-                    <div class="content">HDD</div>
-                </a>
-
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-SSD"></span></div>
-                    <div class="content">SSD</div>
-                </a>
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-RAM"></span></div>
-                    <div class="content">Ram</div>
-                </a>
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-PSU"></span></div>
-                    <div class="content">Nguồn máy tính</div>
-                </a>
-
-                <a class="catalog-item" href="#">
-                    <div class="catalog-icon"><span class="sat-CPU"></span></div>
-                    <div class="content">Tất cả danh mục</div>
-                </a>
-
             </div>
         </div>
 
 
     </div>
-</main>
-
-
-<!--footer-->
-<footer>
-    <div class="container py16">
-        <div class="row ">
-            <div class="col-6">
-                <img class="w-75" src="images/logo-footer.png"/>
-            </div>
-            <div class="col-3">
-                <a class="soc fb"><span class="icon-FB"></span></a>
-            </div>
-            <div class="col-3">
-                <a class="soc mail"><span class="icon-MAIL"></span> </a>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-12 ">
-                <div class="content-title text-white mt8">Dịch vụ khách hàng</div>
-                <div class="content mt8"><a href="#" class="link-green">Kiểm tra đơn hàng</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Quy định chung</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Giá sản phẩm và thanh toán</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Vận chuyển và giao nhận hàng</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Bảo hành, bảo trì</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Đổi trả và hoàn tiền</a></div>
-                <div class="content mt8"><a href="#" class="link-green">Bảo mật thông tin cá nhân</a></div>
-            </div>
-
-            <div class="col-12 text-white mt32">
-                <div class="content">Trụ sở chính: Tầng 9, Tòa nhà Machinco, số 444 Hoàng Hoa Thám, phường Thụy Khuê,
-                    quận Tây Hồ, TP.
-                    Hà
-                    Nội.
-                </div>
-                <div class="content">Văn phòng Đà Nẵng: Tầng 10, tòa nhà Petrolimex, số 122 đường Hai Tháng Chin, quận
-                    Hải Châu, TP.
-                    Đà
-                    Nẵng
-                </div>
-                <div class="content">Văn phòng Hồ Chí Minh: Số 15 Trương Định, phường 6, quận 3, TP. Hồ Chí Minh</div>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
+</div>
 
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -280,63 +245,8 @@
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/lightslider.js"></script>
-
-
 <script>
 
-    (function () {
-
-
-        $('.field input').focus(function () {
-            $(this).siblings('.placeholder').hide();
-        });
-
-        $('.field input').blur(function () {
-            if ($(this).val() === '') {
-                $(this).siblings('.placeholder').show();
-            }
-        });
-
-
-        $('#top-banner').lightSlider({
-            item: 1,
-            loop: true,
-            slideMove: 1,
-            auto: true,
-            pauseOnHover: true,
-            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-            speed: 500
-        });
-
-        $('#menu-icon').click(function (e) {
-            e.preventDefault();
-
-            var top = $('section#catalog').offset().top - $('header').height();
-
-            $('body').animate({
-                scrollTop: top
-            }, 400);
-        });
-
-        $('.search input').click(function () {
-            var search = $('.search');
-            $('#huy').show();
-            $('.search-hide').slideUp(150);
-
-            $('header').toggleClass('bg-huy');
-
-
-        })
-
-        $('#huy').click(function () {
-            $('.search-hide').slideDown(150);
-            $('#huy').hide();
-
-            $('header').toggleClass('bg-huy');
-
-        });
-    })();
 
 </script>
 </body>
